@@ -1,43 +1,152 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>My Website</title>
-</head>
-<body>
-<header class="header">
-	<h1 class="header-heading">I'm Michal</h1>
-	<p class="header-paragraph">..and this is my webpage!</p>
-</header>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<section class="section">
-<hr>
-	<h2 class="section-header">About me</h2>
-	<p>I was born in the south of Poland, grew up in a small town and currently reside in Krakow, Poland.</p>
-</section>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-<section class="section">
-<hr>
-	<h2 class="section-header">Second Section</h2>
-	<p>..is currently under construction.</p>
-	<img src="https://www.androidred.com/wp-content/uploads/2016/08/Orange-Cute-Rabbit.jpg">
-</section>
+    <style type="text/css">
+      
+    .background {
+      background: url('london.jpg') no-repeat center;
+      position: absolute;
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+      z-index: -1;
+    }
 
-<section class="section">
-<hr>
-	<h2 class="section-header">My hobby</h2>
-	<p>My hobby is video editing! (besides web developing, of course!) Check out some of my work below:</p>
-	<ul>
-		<li><iframe width="315" height="175" src="https://www.youtube.com/embed/aCarCFrIris" frameborder="0" allowfullscreen></iframe></li>
-		<li><iframe width="315" height="175" src="https://www.youtube.com/embed/o8wtr1SF7l0" frameborder="0" allowfullscreen></iframe></li>
-		<li><iframe width="315" height="175" src="https://www.youtube.com/embed/hX6UtBJB5pc" frameborder="0" allowfullscreen></iframe></li>
-	</ul>
-	
-</section>
+    .jumbotron {
+      height: 400px;
+      padding-top: 230px; 
+      color: white;
+      background: transparent;
+    }
 
-<footer class="footer">
-	<h4 class="footer-header"><a target="_blank" href="https://github.com/MichalZagol">GitHub</a></h4>
+    @media only screen and (max-width: 33.9em) { 
+      .display-2 {
+          font-size: 60px;
+      }
+    }
 
-</footer>
-</body>
+    @media only screen and (max-width: 61.9em) {
+      .display-2 {
+            font-size: 60px;
+        }
+     }
+
+     section {
+        margin-top: 50px;
+     }
+
+     img {
+        background-size: cover;
+      }
+
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        /* Margin bottom by footer height */
+        margin-bottom: 60px;
+      }
+      .footer {
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- <div class="container"> -->
+
+    <div class="background"></div>
+    
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-2">Hello, world!</h1>
+        <p class="lead">and welcome to my webpage!</p>
+      </div>
+
+      <section>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>About me </h3>
+            <p class="text-muted">I was born in the south of Poland, grew up in a small town and currently reside in Krakow, Poland.</p>
+            <hr>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>My hobby </h3>
+            <p class="text-muted">My hobby is video editing! (besides web developing, of course!) Check out some of my work below:</p>
+            <hr>
+          </div>
+
+          <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aCarCFrIris" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o8wtr1SF7l0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hX6UtBJB5pc" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Last section </h3>
+            <p class="text-muted">..is currently under construction. Check out this cutie!</p>
+            <hr>
+          </div>
+          <div class="col-md-12">
+            <img class="d-block img-fluid" src="https://www.androidred.com/wp-content/uploads/2016/08/Orange-Cute-Rabbit.jpg" alt="Cutie1">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">by MZ, 2017</p>
+      </div>
+    </footer>
+
+      
+
+    <!-- </div> -->
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
